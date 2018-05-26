@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{03ED9ADF-CEE5-4F67-B437-7077857F622E}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TA1718._1._003</RootNamespace>
+    <AssemblyName>TA1718.1.003</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.14393.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>HoloUrho_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="Data\Materials\BackPlus.xml" />
+    <Content Include="Data\Materials\panah.xml" />
+    <Content Include="Data\Materials\Plus.xml" />
+    <Content Include="Data\Models\bawah.mdl" />
+    <Content Include="Data\Models\bohlam012.mdl" />
+    <Content Include="Data\Models\bohlam3.mdl" />
+    <Content Include="Data\Models\bohlam4.mdl" />
+    <Content Include="Data\Models\hum2.mdl" />
+    <Content Include="Data\Models\hum3.mdl" />
+    <Content Include="Data\Models\hum4.mdl" />
+    <Content Include="Data\Models\intemp0.mdl" />
+    <Content Include="Data\Models\intemp1.mdl" />
+    <Content Include="Data\Models\intemp2.mdl" />
+    <Content Include="Data\Models\intemp3.mdl" />
+    <Content Include="Data\Models\intemp4.mdl" />
+    <Content Include="Data\Models\noise1.mdl" />
+    <Content Include="Data\Models\noise2.mdl" />
+    <Content Include="Data\Models\noise3.mdl" />
+    <Content Include="Data\Models\outtemp.mdl" />
+    <Content Include="Data\Models\tengah.mdl" />
+    <Content Include="Data\Models\panah.mdl" />
+    <Content Include="Data\Models\BackPlus.mdl" />
+    <Content Include="Data\Models\Plus.mdl" />
+    <Content Include="Data\Models\Minus.mdl" />
+    <Content Include="Data\Models\hum1.mdl" />
+    <Content Include="Data\Models\hum0.mdl" />
+    <Content Include="Data\Models\KnobMin.mdl" />
+    <Content Include="Data\Models\KnobPlus.mdl" />
+    <Content Include="Data\Models\Slider.mdl" />
+    <Content Include="Data\Models\Rotate.mdl" />
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="actuatormessage.cs" />
+    <Compile Include="facemessage.cs" />
+    <Compile Include="gesturemessage.cs" />
+    <Compile Include="modekelas.cs" />
+    <Compile Include="sensormessage.cs" />
+    <Compile Include="RMQ.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UITwoD.cs" />
+    <Compile Include="UITwoD_4Sensor.cs" />
+    <Compile Include="UITwoD_Face.cs" />
+    <Compile Include="UITwoD_Gesture.cs" />
+    <Compile Include="UITwoD_Voice.cs" />
+    <Compile Include="voicemessage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Materials\bawah.xml" />
+    <Content Include="Data\Materials\bohlam0.xml" />
+    <Content Include="Data\Materials\hum0.xml" />
+    <Content Include="Data\Materials\hum1.xml" />
+    <Content Include="Data\Materials\hum2.xml" />
+    <Content Include="Data\Materials\hum3.xml" />
+    <Content Include="Data\Materials\hum4.xml" />
+    <Content Include="Data\Materials\intemp0.xml" />
+    <Content Include="Data\Materials\intemp1.xml" />
+    <Content Include="Data\Materials\intemp2.xml" />
+    <Content Include="Data\Materials\intemp3.xml" />
+    <Content Include="Data\Materials\intemp4.xml" />
+    <Content Include="Data\Materials\light1.xml" />
+    <Content Include="Data\Materials\light2.xml" />
+    <Content Include="Data\Materials\light3.xml" />
+    <Content Include="Data\Materials\light4.xml" />
+    <Content Include="Data\Materials\noise1.xml" />
+    <Content Include="Data\Materials\noise2.xml" />
+    <Content Include="Data\Materials\noise3.xml" />
+    <Content Include="Data\Materials\outtemp.xml" />
+    <Content Include="Data\Materials\tengah.xml" />
+    <Content Include="Data\Textures\BiruSlider.png" />
+    <Content Include="Data\Textures\crosshair1.png" />
+    <Content Include="Data\Textures\dot.png" />
+    <Content Include="Data\Textures\Hum1.jpg" />
+    <Content Include="Data\Textures\Hum2.jpg" />
+    <Content Include="Data\Textures\Hum3.jpg" />
+    <Content Include="Data\Textures\License.txt" />
+    <Content Include="Data\Textures\Light1.jpg" />
+    <Content Include="Data\Textures\Light2.jpg" />
+    <Content Include="Data\Textures\Light3.jpg" />
+    <Content Include="Data\Textures\reddot.png" />
+    <Content Include="Data\Textures\Sound1.jpg" />
+    <Content Include="Data\Textures\Sound2.jpg" />
+    <Content Include="Data\Textures\Sound3.jpg" />
+    <Content Include="Data\Textures\Suhu1.jpg" />
+    <Content Include="Data\Textures\Suhu2.jpg" />
+    <Content Include="Data\Textures\Suhu3.jpg" />
+    <Content Include="Data\Textures\Suhu4.jpg" />
+    <Content Include="Data\Textures\Suhu5.jpg" />
+    <Content Include="Properties\Default.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="RabbitMQ.Client">
+      <HintPath>..\..\..\..\Tugas Akhir\Server\RabbitMQ Client Hololens\RabbitMQ.Client.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP;CODE_ANALYSIS</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP;CODE_ANALYSIS</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s). NuGet Package Restore will attempt to automatically find or download them when you build this project in Visual Studio. For more information, see http://go.microsoft.com/fwlink/?LinkID=322105.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(ProjectDir)\project.lock.json')" Text="$([System.String]::Format('$(ErrorText)', 'project.lock.json'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <AppxPackageSigningEnabled>true</AppxPackageSigningEnabled>
+  </PropertyGroup>
+</Project>
